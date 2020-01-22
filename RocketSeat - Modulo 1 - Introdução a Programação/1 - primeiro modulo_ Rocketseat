@@ -1,0 +1,553 @@
+frontend - html(estrutura do web service)+css(estilização da pagina web)+javascript()
+
+backend - 
+
+Iniciando com programação - Rocketseat
+
+
+​.toFixed(n)
+
+
+atalhos:
+enviar o arquivo via discord
+```js
+qualquer codigo
+````
+
+
+*/* vc pode usar também comentário multilinha */ ou vai no menu Edit/Toggle Line Comment @Victor.Alves ali vai ter o atalho
+Alt - seleciona multiplas linhas
+CTRL + B abre a aba do lado esquerdo
+CTRL K depois CTRL S abre linhas de atalho
+Alt e seleciona tecla para cima ou para baixo - move a linha toda
+CTRL + Shift + P = seleciona "Format Selection
+
+
+-------------------------------------------------------------------------------------------------------------------------
+---->>>>>>>>>>>Sintaxe, Comentários, Strings, Numbers e Calculos<<<<<<<<<<<----
+
+// Criar um programa que calcula a media.
+// das notas entre os alunos e envia.
+// Mensagem do calculo da media.
+
+
+
+//criar uma variavel string = criar um texto = const.
+//criar uma variavel string = criar um texto = number.
+//as aspas pode ser simples ' ' ou duplo "" "".
+
+
+const aluno01 = "Victor"
+const aluno02 = 'Marcos'
+const aluno03 = 'Fernanda'
+const notaAluno01 = 9.8
+const notaAluno02 = 10
+const notaAluno03 = 2
+
+const media = (notaAluno01 + notaAluno02 + notaAluno03) / 3
+//const nome3 = `Antonio e ${nome}` //consigo colocar uma nova variavel com a ` `
+
+console.log(media)
+
+
+-------------------------------------------------------------------------------------------------------------------------
+---->>>>>>>>>>>Condições<<<<<<<<<<<----
+
+// Criar um programa que calcula a media
+// das notas entre os alunos e envia
+// Mensagem do calculo da media.
+// Se a media for > 5, parabenizar a tuma
+
+
+
+// Criar uma variavel string = criar um texto
+// As aspas pode ser simples ' ' ou duplo "" ""
+
+const aluno01 = "Victor"
+const notaAluno01 = 9.8
+const aluno02 = 'Marcos'
+const notaAluno02 = 10
+const aluno03 = 'Fernanda'
+const notaAluno03 = 2
+
+
+
+const media = (notaAluno01 + notaAluno02 + notaAluno03) / 3
+//const nome3 = `Antonio e ${nome}` //consigo colocar uma nova variavel com a ` `
+
+// Condições
+
+if (media > 5) {
+    console.log(`A média for de ${media}. Parabéns`)
+} else {
+    console.log(`A média é menor que 5`)
+}
+//console.log(media < 5)
+
+-------------------------------------------------------------------------------------------------------------------------
+---->>>>>>>>>>>Operadores<<<<<<<<<<<----
+
+//Operadores Relacionais
+
+//      >      Maior que
+//      <      Menor que
+//      >=     Maior igual a
+//      <=     Menor igual a
+
+//const a = 5
+//const b = 6
+
+//console.log(a > b) //False
+//console.log(a < b) //True
+//console.log(a >= b) //False
+//console.log(a <= b) //True
+
+
+//Operadores de Igualdade
+
+//       ==     Igual a     
+//       !=     Diferente de
+//       ===    Igual e do mesmo tipo
+//       !==    diferente Inclusive do tipo
+
+//const a = 5
+//const b = '5'
+
+//console.log(a == b) //true
+//console.log(a === b) //false
+//console.log(a != b) //false
+//console.log(a !== b) //true
+
+
+
+//Operadores de lógicos
+//São tipicamente utilizados com valores booleanos (true ou false)
+//Nos ajudam a criar expressões lógicas a partir de dois ou mais valores
+
+
+//      &&      É   -  Vai comparar dois booleanos e retornar verdadeiro caso AS DUAS expressões sejam verdadeiras
+//      ||      OU  -  Vai comparar dois booleanos e retornar verdadeiro caso UMA DAS DUAS expressões sejam verdadeiras
+//      !       NÂO -  Vai negar uma expressão
+
+//const a = 5
+//const b = '5'
+
+//console.log(a == b && a !== b) //true
+//console.log(a == b && a != b) //false
+//console.log(a == b || a !== b) //true
+//console.log(a == b || a != b) //true
+//console.log(a != b || a === b) //false
+//console.log( !(a == b || a != b) ) //false
+//console.log(! true ) //false
+
+
+//Operadores de Aritméticos
+
+
+//      *      Multiplicação
+//      /      Divisão
+//      %      Resto da divisão 
+//      +      Adição
+//      -      Subtração
+
+console.log( 2 * 2 ) // 4
+console.log( 2 / 2 ) // 1
+console.log( 2 % 1.4 ) // 0.6
+console.log( 2 + 2 ) // 4
+console.log( 2 - 2 ) // 0
+
+
+-------------------------------------------------------------------------------------------------------------------------
+---->>>>>>>>>>>DESAFIO 1 INTRODUÇÃO À PROGRAMAÇÃO<<<<<<<<<<<----
+// Calculo de IMC
+
+const nome = "Victor"
+const peso = 93
+const altura = 1.73
+const sexo = "Masculico"
+
+const IMC = (peso / (altura * altura))
+console.log(IMC)
+
+//Exibindo mensagem
+//Basta apenas alterar o valor de Peso para mudar mensagem.
+
+if (IMC >= 30) {
+    console.log (`Carlos você está acima do peso`)
+} else if (IMC <= 29.99) {
+    console.log (`Carlos você não acima do peso`)
+}
+
+-------------------------------------------------------------------------------------------------------------------------
+---->>>>>>>>>>>DESAFIO 2 INTRODUÇÃO À PROGRAMAÇÃO<<<<<<<<<<<----
+// Calculo de Aposentadoria
+
+const nome1 = "Miriam"
+const sexo1 = "Feminino"
+const idade1 = 78
+const contribuicao1 = 23
+
+const nome2 = "Marcos"
+const sexo2 = "Masculino"
+const idade2 = 56
+const contribuicao2 = 26
+
+const regra1 = (idade1) + (contribuicao1)
+const regra2 = (idade2) + (contribuicao2)
+
+//O tempo de contribuição mínimo para homens é de 35 anos e, para mulheres, 30 anos;
+//Utilizando a regra 85-95, a soma da idade com o tempo de contribuição do homem precisa ser de no mínimo 95 anos, enquanto a mulher precisa ter no mínimo 85 anos na soma;
+//console.log (regra1 , regra2)
+
+if (regra1 >= 85 ) {
+    console.log ('Silvana, você pode já pode se aponsetar')
+} else {
+    console.log (`Silvana, você ainda não pode se aposentar`)
+}
+if (regra2 >=90) {
+    console.log ('Marcos/, você pode já pode se aponsetar')
+} else {
+    console.log (`Marcos, você ainda não pode se aposentar`)
+}
+    
+    
+	
+	
+-------------------------------------------------------------------------------------------------------------------------
+---->>>>>>>>>>>Objetos<<<<<<<<<<<----	
+	
+const aluno01 = {
+    nome: "Victor",
+    nota: 9.8
+}
+
+const aluno02 = {
+    nome: "Diego",
+    nota: 10
+}
+
+const aluno03 = {
+    nome: "Marcos",
+    nota: 2
+}
+
+
+console.log(aluno01)
+
+const media = (aluno01.nota + aluno02.nota + aluno03.nota) / 3
+//const nome3 = `Antonio e ${nome}` //consigo colocar uma nova variavel com a ` `
+
+console.log(media)
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+---->>>>>>>>>>>Array ou Vetores<<<<<<<<<<<----
+
+//Arrays ou vetores valores agrupados em um unica variavel.
+
+const aluno = [
+    {
+    nome: "Victor",
+    nota: 9.8
+    },  
+    {
+    nome: "Diego",
+    nota: 10
+    },
+    {
+    nome: "Marcos",
+    nota: 2 
+    }
+]
+
+const nomesdeAlunos = ["Victor", "Diego", "Marcos"]
+console.log(aluno)
+//console.log(nomesdeAlunos)
+
+const media = (aluno[0].nota + aluno[1].nota + aluno[2].nota) / 3
+
+console.log(media)
+
+
+-------------------------------------------------------------------------------------------------------------------------
+---->>>>>>>>>>>DESAFIO 1 LIDANDO COM OBJETOS E VETORES<<<<<<<<<<<----
+
+// //Arrays ou vetores valores agrupados em um unica variavel.
+
+const empresa = {
+    Nome: "Rocketseat",
+    Cor: "Roxo",
+    Foco: "Programação",
+    Endereço :"Rua Avenida São Paulo",
+    Rua: "Rua Guilherme Gembala",
+    Numero: 260
+}
+console.log(`A empresa ${empresa.Nome} está localizada na ${empresa.Rua}`)
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+---->>>>>>>>>>>DESAFIO 2 LIDANDO COM OBJETOS E VETORES<<<<<<<<<<<----
+
+// //Arrays ou vetores valores agrupados em um unica variavel.
+
+const dadoscadastrais = {
+        nome: "Victor",
+        idade: 32,
+        tecnologia: "Analise e Sesenvolvimento Sistema",
+}
+
+const tecnologia = [
+    {
+        NomeCurso: "JavaScript",
+        Especialidade: "desenvolvimento em ambiente de teste",
+    },
+    {
+        NomeCurso: "C++",
+        Especialidade: "Desktop",
+    },	
+    {
+        NomeCurso: "Python",
+        Especialidade: "Web/Mobile",
+    } 
+]
+
+console.log(`O usuário ${dadoscadastrais.nome} tem ${dadoscadastrais.idade} anos e usa a tecnologia ${tecnologia[1].NomeCurso} com especialidade em ${tecnologia[1].Especialidade}`)
+    
+-------------------------------------------------------------------------------------------------------------------------
+---->>>>>>>>>>>Funções e Estrutura de repetição<<<<<<<<<<<----
+	
+
+//Criar um programa que calcule a média 
+//das turmas de alunos e envie 
+//uma mensagem do calculo da mpedia
+
+
+const alunosDaTurmaA = [
+{
+  nome: "Victor",
+  nota: 1.8
+},  
+{
+  nome: "Diego",
+  nota: 10
+},
+{
+  nome: "Marcos",
+  nota: 2
+}    
+]
+
+const alunosDaTurmaB = [
+{
+   nome: "Carlos",
+   nota: 10
+},  
+{
+  nome: "Pedro",
+  nota: 10
+},
+{
+  nome: "Ziro",
+  nota: 0
+}
+]
+
+function CalculoMedia(alunos) {
+  return (alunos[0].nota + alunos[1].nota + alunos[2].nota) / 3
+}
+
+const media1 = CalculoMedia(alunosDaTurmaA)
+const media2 = CalculoMedia(alunosDaTurmaB)
+
+
+
+function enviarMensagem(media, turma){
+if (media > 5 ) {
+  console.log(`A media da turma ${turma} foi de ${media}. Parabéns`)
+} else {
+  console.log(`A média da turma ${turma} é menor que 5`)
+}
+}
+
+enviarMensagem(media1, 'turmaA')
+enviarMensagem(media2, 'TurmaB')  
+
+//const media = (alunos[0].nota + alunos[1].nota + alunos[2].nota) / 3
+
+
+-------------------------------------------------------------------------------------------------------------------------
+---->>>>>>>>>>>Estrutura de repetição<<<<<<<<<<<----
+
+
+
+//Criar um programa que calcule a média 
+//das turmas de alunos e envie 
+//uma mensagem do calculo da mpedia
+
+
+const alunosDaTurmaA = [
+{
+  nome: "Victor",
+  nota: 1.8
+},  
+{
+  nome: "Diego",
+  nota: 10
+},
+{
+  nome: "Marcos",
+  nota: 2
+},    
+{
+  nome: "dado",
+  nota: 10
+}   
+]
+
+const alunosDaTurmaB = [
+{
+   nome: "Carlos",
+   nota: 10
+},  
+{
+  nome: "Pedro",
+  nota: 10
+},
+{
+  nome: "Ziro",
+  nota: 10
+},
+{
+  nome: "Novato",
+  nota: 1
+}
+]
+
+
+function CalculoMedia(alunos) {
+  //for (let /*permite que mude o valor de*/ i = 0; i < alunos.length; i++) {
+    // console.log(i);
+let soma = 0
+for (let i = 0; i < alunos.length; i++) { 
+  soma = soma + alunos[i].nota  
+}
+  }
+
+
+const media1 = CalculoMedia(alunosDaTurmaA)
+const media2 = CalculoMedia(alunosDaTurmaB)
+
+
+
+function enviarMensagem(media, turma){
+if (media > 5 ) {
+  console.log(`A media da turma ${turma} foi de ${media}. Parabéns`)
+} else {
+  console.log(`A média da turma ${turma} é menor que 5`)
+}
+}
+
+enviarMensagem(media1, 'turmaA')
+enviarMensagem(media2, 'TurmaB')  
+
+//const media = (alunos[0].nota + alunos[1].nota + alunos[2].nota) / 3
+
+-------------------------------------------------------------------------------------------------------------------------
+---->>>>>>>>>>>Booleans True e False<<<<<<<<<<<----
+
+const alunosDaTurmaA = [
+  {
+    nome: "Victor",
+    nota: 9.8
+  },
+  {
+    nome: "Diego",
+    nota: 10
+  },
+  {
+    nome: "Marcos",
+    nota: 2
+  },
+  {
+    nome: "dado",
+    nota: 10
+  }
+]
+
+const alunosDaTurmaB = [
+  {
+    nome: "Carlos",
+    nota: 10
+  },
+  {
+    nome: "Pedro",
+    nota: 10
+  },
+  {
+    nome: "Ziro",
+    nota: 10
+  },
+  {
+    nome: "Novato",
+    nota: 1
+  }
+]
+
+
+function CalculoMedia(alunos) {
+  //for (let /*permite que mude o valor de*/ i = 0; i < alunos.length; i++) {
+  // console.log(i);
+  let soma = 0
+  for (let i = 0; i < alunos.length; i++) {
+    soma = soma + alunos[i].nota
+  }
+  
+  const media = soma / alunos.length
+
+  return media
+}
+
+
+const media1 = CalculoMedia(alunosDaTurmaA)
+const media2 = CalculoMedia(alunosDaTurmaB)
+
+
+
+function enviarMensagem(media, turma) {
+  if (media > 5) {
+    console.log(`A media da turma ${turma} foi de ${media}. Parabéns`)
+  } else {
+    console.log(`A média da turma ${turma} é menor que 5`)
+  }
+}
+
+enviarMensagem(media1, 'turmaA')
+enviarMensagem(media2, 'TurmaB')
+
+
+function marcarComoReprovado(aluno) {
+  aluno.reprovado = false
+  if (aluno.nota < 5) {
+    aluno.reprovado = true
+  }
+}
+
+
+function enviarMensagemReprovado(aluno) {
+  if (aluno.reprovado) {
+    console.log(` O aluno ${aluno.nome} está reprovado!`)
+  }
+}
+
+
+function alunosReprovado(alunos) {
+  for (let aluno of alunos) {
+    marcarComoReprovado(aluno)
+    enviarMensagemReprovado(aluno)
+  }
+}
+
+alunosReprovado(alunosDaTurmaA)
+alunosReprovado(alunosDaTurmaB)
