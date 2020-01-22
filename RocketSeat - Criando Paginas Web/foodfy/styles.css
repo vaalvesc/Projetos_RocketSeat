@@ -1,0 +1,179 @@
+@import "https://fonts.googleapis.com/css?family=Roboto&display=swap";
+
+
+/* <main></main> quando recebe um conteudo principal, tipo mais acessadas eu uso a tag */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white; /*Cor de fundo da pagina web  */
+    font-family: 'Roboto', sans-serif; /* fonte pesquisada no "google fontes"  */
+}
+
+a {
+    text-decoration: none; /* Retiro o sublinhado das palavras "Sobre e Receitas */
+}
+
+.wrapper {
+    width: 940px; /* estendeu o quadrado para pegar toda imagem e frase */ 
+    margin: 32px auto; /* Largura de uma palavra da outra "  */
+}
+
+header {
+    margin: 32px, 0; /* Largura de uma palavra da outra "  */
+    display: grid; /* coloca tudo na mesma tinha como se fosse cirar tabela */  
+    grid-template-columns: 210px 1fr; /* numeros de colunas */
+    align-items: center;  /* faz alinhamento do "Sobre e Receitas ao meio */
+}
+
+.menu a {
+    font-size: 16px; /* tamanho das letras "Sobre e Receitas */
+    color: #111111; /* cor das palavras "Sobre e Receitas */
+    margin-right: 30px; /* Separação de uma palavra da outra "Sobre e Receitas */
+    line-height: 90px; /* distancia de uma linha "mais acessada com a imagem*/
+}
+
+.hero {
+    margin: 30px auto;
+    display: grid; /* coloca tudo na mesma tinha como se fosse cirar tabela */  
+    grid-template-columns: 1fr 1fr; /* numeros de colunas */
+    background: #FBDFDB; /* Cor do texto "h1 e p */
+    border-radius: 30px;
+
+}
+
+.hero .intro{
+    width: 316px; /* agrupou as frases dentro  h1 e p, juntou mais as letra */
+    align-self: center; /* alinhado o texto h1 e p para o meio */
+    padding-left: 60px; /* ajustou o h1 e p com a borda do lado esquerdo   */
+}
+
+.hero .intro h1{
+    font-size: 32px; /* tamanho das letras do h1 */
+    line-height: 38px; /* a linha do p ficando abaixo do h1 */
+    color: #111111; /* cor da letra h1 */
+    margin-bottom: 10px; /* o espaço da linha p com a frase do h1 */
+}
+
+.hero .intro p {
+    font-size: 16px; /* tamanho das letras do p */
+    color: rgba(0, 0, 0, 0.7); /* cor do texto p */
+    line-height: 28px  /* distancia de uma linha para outra no p */
+
+}
+.hero img {
+    justify-self: center; /* alinhou a imagem no meio */
+    margin-top: 66px;
+}
+
+main {
+    margin: 50px 0;
+}
+
+main h2 {
+    line-height: 28px; /* distancia de uma linha "mais acessada com a imagem*/
+    font-size: 24px; /* tamanho das letras */
+    color: #111111;
+    margin-bottom: 20px;
+}
+
+main .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 20px ;
+}
+
+main .content img {
+    /*line-height: 38px; /* a linha do "triplo..." ficando abaixo da imagem */
+    margin-bottom: 20px; /* o espaço dado na frase "triplo... com a imagem */
+    width: 100%; /*largura da imagem */
+    border-radius: 15px  
+    
+}
+
+main .content h3 {
+    font-size: 18px; /* tamanho das letras */
+    line-height: 21px;
+    color: #111111;
+    margin-bottom: 5px;    
+}
+
+main .content p {
+    font-size: 14px; /* tamanho das letras */
+    line-height: 16px;
+    /*margin-bottom: 30px; /* o espaço da linha p com a frase do h1 */
+    color: #777
+}
+
+footer {
+    padding: 23px 0;; /* Deixar o texto mais gordinho*/
+    background: #eeeeee;  /* deixar o nome "TODO OS DIREITOS..." marcado*/
+    font-size: 14px; /* tamanho das letras */
+    color: #999999;
+    text-align: center
+    }
+
+
+/* === MODAL === */
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7); /* fundo da pagina*/
+    width: 100%; /* esticar aba em branco */
+    height: 100%;
+    position: fixed; /* fixar a janela na tela */
+    top: 0; /* chama aba para cima */
+    opacity: 0; /* fixado na tela - topo*/
+    visibility: hidden; /* visibilidade do icone tem que está inibida */
+}
+
+.modal {
+    background-color: white; /* a cor da tela*/
+    width: 50%; /* */
+    max-width: 660px;
+    height: 410%; /* Altura */
+    margin: 25vh auto; /* alinha imagem ao meio */
+    position: relative; 
+    border-radius: 16px;
+    padding: 30px;
+}
+
+.modal-content .card .img {
+    width: 100%; /* imagem ira se estender */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.modal-content .card h4 {
+    font-size: 24px;
+    line-height: 28px;
+    color: #111111;
+    text-align: center;
+}
+
+.modal-content .card p{
+    line-height: 21px;
+    font-size: 18px;
+    color: #777777;
+    text-align: center;
+}
+
+.modal-content .card a{
+    font-size: 16px;
+    color: #999999;
+    text-align: center;
+    display: block;
+    margin-top: 60px;
+}
+
+ /* === MODAL.ACTIVE === */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* VOLTAR AULA 02:00:14 */

@@ -1,0 +1,26 @@
+HTMLL / CSS
+
+*background* - cor de fundo
+
+----------------------------------------------------------------------------------------------
+estrutura HTMLL
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+            <title>Victor Alves</title>
+
+            <style>
+                body {
+                    background: #282d36;
+                }
+            </style>
+    </head>
+
+<body>
+    
+</body>
+
+
+</html>
