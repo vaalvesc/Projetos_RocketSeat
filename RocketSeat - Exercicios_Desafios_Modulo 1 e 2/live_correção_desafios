@@ -1,0 +1,246 @@
+Live CORREÇÃO DOS DESAFIOS!!!!!
+
+-------------------------------------------------------------------------------------------------------------------------
+---->>>>>>>>>>>Desafio 01-1. Primeiros passos com JS - Cálculo de IMC <<<<<<<<<<<----
+// Calculo de IMC
+
+const nome = "Victor"
+const peso = 93
+const altura = 1.73
+const sexo = "Masculico"
+
+const IMC = (peso / (altura * altura))
+console.log(IMC)
+
+//Exibindo mensagem
+//Basta apenas alterar o valor de Peso para mudar mensagem.
+
+if (IMC >= 30) {
+    console.log (`${nome} você está acima do peso`)
+    } else {
+    console.log (`${nome} você está NÂO acima do peso`)
+    }
+	
+---------------------------------------------------------------------------------------------------------------------------	
+---->>>>>>>>>>>Desafio 01-1. Primeiros passos com JS - Cálculo de aposentadoria <<<<<<<<<<<----
+	
+//Calculo de aposentadoria
+
+const nome = 'Victor'
+const sexo = 'F'
+const idade = 48
+const contribuicao = 23
+
+const tempoMinimoContribuicaoHomem = 35
+const tempoMinimoContribuicaoMulher = 30
+
+const calculoAposentadoria = idade + contribuicao
+
+const verificacaocalculoAposentadoriaHomen = calculoAposentadoria >= 95
+const verificacaocalculoAposentadoriaMulher = calculoAposentadoria >= 85
+
+if (sexo == `M`) {
+    if(verificacaocalculoAposentadoriaHomen) {
+    console.log(`${nome}, você pode se aposentar!`)
+} else {
+    console.log(`${nome}, você pode não se aposentar!`)
+}
+} else {
+    if(verificacaocalculoAposentadoriaMulher) {
+        console.log(`${nome}, você pode se aposentar!`)
+    } else {
+        console.log(`${nome}, você pode não se aposentar!`)
+    }
+}	
+
+-------------------------------------------------------------------------------------------------------------------------
+---->>>>>>>>>>>Desafio 01-2. Lidando com objetos e vetores - Desafio 01-2. - Lidando com objetos e vetores <<<<<<<<<<<----
+
+// //Arrays ou vetores valores agrupados em um unica variavel.
+
+const empresa = {
+    Nome: "Rocketseat",
+    Cor: "Roxo",
+    Foco: "Programação",
+    Endereço :"Rua Avenida São Paulo",
+    Rua: "Rua Guilherme Gembala",
+    Numero: 260
+}
+console.log(`A empresa ${empresa.Nome} está localizada na ${empresa.Rua}, 260`)
+
+
+-------------------------------------------------------------------------------------------------------------------------
+---->>>>>>>>>>>Desafio 01-2. Lidando com objetos e vetores - Desafio 01-2. - Vetores e Objetos <<<<<<<<<<<----
+
+const programador = {
+    nome: "Victor",
+    idade: 26,
+    tecnologias: [
+                { nome: 'C++', especialidade: 'Desktop' },
+                { nome: 'Python', especialidade: 'Data Science' },
+                { nome: 'JavaScript', especialidade: 'Web/Mobile' }
+]
+}
+
+console.log(`O usuário ${programador.nome} tem ${programador.idade} anos e usa a ${programador.tecnologias[0].nome} com especialidade em ${programador.tecnologias[0].especialidade}`)
+
+
+-------------------------------------------------------------------------------------------------------------------------
+---->>>>>>>>>>>Desafio 01-3. Funções e estruturas de repetição - Usuários e tecnologias<<<<<<<<<<<----
+
+//Usuários e Tecnologias
+
+const usuarios = [
+    { nome: 'Carlos', tecnologias: ['HTML', 'CSS'] },
+    { nome: 'Jasmine', tecnologias: ['JavaScript', 'CSS'] },
+    { nome: 'Tuane', tecnologias: ['HTML', 'Node.js'] }
+]
+
+for(let i = 0; i < usuarios.length; i++) {
+    console.log(`${usuarios[i].nome} trabalha com ${usuarios[i].tecnologias}`)
+
+}
+
+############################ OUTRA MANEIRA - MUDANDO FOR ############################ 
+
+//Usuários e Tecnologias
+
+const usuarios = [
+    { nome: 'Carlos', tecnologias: ['HTML', 'CSS'] },
+    { nome: 'Jasmine', tecnologias: ['JavaScript', 'CSS'] },
+    { nome: 'Tuane', tecnologias: ['HTML', 'Node.js'] }
+]
+
+for(let usuario of usuarios) {
+    console.log(`${usuario.nome} trabalha com ${usuario.tecnologias}`)
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------
+---->>>>>>>>>>>Desafio 01-3. Funções e estruturas de repetição - Busca por tecnologia<<<<<<<<<<<----
+
+//Usuários e Tecnologias
+
+const usuarios = [
+    { nome: 'Carlos', tecnologias: ['HTML', 'CSS'] },
+    { nome: 'Jasmine', tecnologias: ['JavaScript', 'CSS'] },
+    { nome: 'Tuane', tecnologias: ['HTML', 'Node.js'] }
+]
+
+//for(let i = 0; i < usuarios.length; i++) {
+//    console.log(`${usuarios[i].nome} trabalha com ${usuarios[i].tecnologias}`)
+//}
+
+//for(let usuario of usuarios) {
+  //  console.log(`${usuario.nome} trabalha com ${usuario.tecnologias}`)
+//}
+
+//Busca por tecnologia
+
+function checaSeUsuarioUsaCSS(usuario) {
+    for(let tecnologia of usuario.tecnologias) {
+        if(tecnologia == `CSS`) {
+        return true
+        }
+    
+    // Percorra o array de tecnologias do usuário até encontrar se ele trabalha com CSS
+    // SE encontrar, retorne true da função, caso contrário retorne false
+    }
+  //return false
+}
+
+for (let i = 0; i < usuarios.length; i++) {
+    const usuarioTrabalhaComCSS = checaSeUsuarioUsaCSS(usuarios[i])
+  
+    if(usuarioTrabalhaComCSS) {
+      console.log(`O usuário ${usuarios[i].nome} trabalha com CSS`)
+    }
+  }
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+---->>>>>>>>>>>Desafio 01-3. Funções e estruturas de repetição - Soma de despesas e receitas<<<<<<<<<<<----
+
+const usuarios = [
+    {
+      nome: 'Salvio',
+      receitas: [115.3, 48.7, 98.3, 14.5],
+      despesas: [85.3, 13.5, 19.9]
+    },
+    {
+      nome: 'Marcio',
+      receitas: [24.6, 214.3, 45.3],
+      despesas: [185.3, 12.1, 120.0]
+    },
+    {
+      nome: 'Lucia',
+      receitas: [9.8, 120.3, 340.2, 45.3],
+      despesas: [450.2, 29.9]
+    }
+  ]
+
+  function calculaSaldo(receitas, despesas) {
+    const somaReceitas = somaNumeros(receitas)
+    const somaDespesas = somaNumeros(despesas)
+
+    return somaReceitas - somaDespesas 
+}
+
+
+  function somaNumeros(numeros) {
+      let soma = 0
+      for(let numero of numeros) {
+          soma = soma + numero
+      }
+
+    return soma
+  }
+
+  for(let usuario of usuarios){
+      let saldo = calculaSaldo(usuario.receitas, usuario.despesas)
+        if(saldo > 0) {
+            console.log(`${usuario.nome} possui saldo POSITIVO de ${saldo.toFixed(2)}`)
+        } else {
+            console.log(`${usuario.nome} possui saldo NEGATIVO de de ${saldo.toFixed(2)}`)
+        }
+  }
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+---->>>>>>>>>>>Desafio 01-4. Aplicação - Operações bancárias/Adicionar Tranações<<<<<<<<<<<----
+
+const user = {
+    name: 'Mariana',
+    transactions: [],
+    balance: 0
+  }
+
+  //Adiciomar Tranações
+
+    //  {
+    //    type: 'credit',
+    //    value: 50.5
+    //  }
+
+  function createTransaction(transaction) {
+    user.transactions.push(transaction)
+    
+    if(transaction.type == `credit`) {
+    user.balance = user.balance + transaction.value
+    } else {
+    user.balance = user.balance - transaction.value
+    }
+  }
+
+-------------------------------------------------------------------------------------------------------------------------
+---->>>>>>>>>>>Desafio 01-4. Aplicação - Adicionar Tranações/Relatorios<<<<<<<<<<<----
+
+
+
+
+
+
