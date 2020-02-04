@@ -16,7 +16,7 @@ nunjucks.configure("views", {
 
 server.get("/", function(req, res) {
     const about = {
-        avatar_url: "https://avatars3.githubusercontent.com/u/6643122?s=460&v=4",
+        avatar_url: "https://github.com/vaalvesc/Projetos_RocketSeat/blob/master/Foto_Sobre.jpg?raw=true",
         name: "Victor Alves",
         role: "Aprendiz - RocketSeat",
         description: 'Programador - Full-stack, focado em trazer o melhor ensino para iniciantes em processo de desenvolvimento no <a href="https://www.banesecard.com.br/PortalCliente/Login" target="_blank">banesecard</p>',
