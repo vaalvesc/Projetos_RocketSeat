@@ -1,4 +1,5 @@
-@import "https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister&display=swap";     
+/*@import "https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister&display=swap"; */
+@import "https://fonts.googleapis.com/css?family=Vollkorn&display=swap";    
     
     :root {
                 --color-green: #50fa7b;
@@ -172,4 +173,15 @@
 
     /* === FEATURED === */
 
-
+    .card__image-container {
+        position: relative;
+    }
+    .featured {
+        position: absolute;
+        background: #f7d05f;
+        color: #111;
+        padding: 2px 8px;
+        right: 5px;
+        border-radius: 16px;
+        top: -10px
+    }
