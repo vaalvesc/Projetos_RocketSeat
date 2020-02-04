@@ -3,7 +3,8 @@ module.exports = [
 {   id: "GykTLqODQuU",
     title: "Formulário Animado com JS Puro e CSS animation | Victor Alves",
     duration: "57 min",
-    price: "Free"
+    price: "Free",
+    featured: true
 },
 {   id: "HN1UjzRSdBk",
     title: "Formulário Animado com JS Puro e CSS animation | Victor Alves",
@@ -18,7 +19,8 @@ module.exports = [
 {   id: "x-4z_u8LcGc",
     title: "Formulário Animado com JS Puro e CSS animation | Victor Alves",
     duration: "33 min",
-    price: "Free"
+    price: "Free",
+    featured: true
 },
 {   id: "ghTrp1x_1As",
     title: "Formulário Animado com JS Puro e CSS animation | Victor Alves",
@@ -28,7 +30,8 @@ module.exports = [
 {   id: "-j7vLmBMsEU",
     title: "Formulário Animado com JS Puro e CSS animation | Victor Alves",
     duration: "33 min",
-    price: "Free"
+    price: "Free",
+    featured: true
 }
 ]
 

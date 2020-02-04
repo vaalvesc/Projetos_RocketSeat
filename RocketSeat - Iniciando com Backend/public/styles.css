@@ -99,6 +99,8 @@
 
     .card {
         background-color: var(--color-rocket);
+        display: grip;
+        cursor: pointer;
     }
 
     .card__image-container img {
@@ -167,3 +169,7 @@
         position: absolute; /*Preencher o video */
         top: 5%
     }
+
+    /* === FEATURED === */
+
+
