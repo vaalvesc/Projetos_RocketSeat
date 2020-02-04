@@ -9,11 +9,26 @@ server.use(express.static('public'))
 server.set("view engine", "njk")
 
 nunjucks.configure("views", {
-    express:server
+    express:server,
+    autoescape: false,
+    noCache: true
 })
 
-server.get("/",function(req, res) {
-    return res.render("about")
+server.get("/", function(req, res) {
+    const data = {
+        avatar_url: "",
+        name: "Victor Alves",
+        role: "Aprendiz - RocketSeat",
+        description: 'Programador - Full-stack, focado em trazer o melhor ensino para iniciantes em processo de desenvolvimento no <a href="https://www.banesecard.com.br/PortalCliente/Login" target="_blank">banesecard</p>',
+        links: [
+            { name: "Github", url: "https://github.com/vaalvesc/"},
+            { name: "Facebook", url: "https://www.facebook.com/victor.alves810/"},
+            { name: "Linkedin", url: "https://www.linkedin.com/in/victor-antonio-alves-costa-a68a9059/"}
+        ]
+        
+    }
+
+    return res.render("about", { about })
 })
 
 server.get("/portfolio",function(req, res) {
