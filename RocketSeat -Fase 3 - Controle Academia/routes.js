@@ -2,15 +2,15 @@ const express = require('express')
 const routes = express.Router()
 
 routes.get('/', function(req, res) {
-    return res.redirect("/Instructors")
+    return res.redirect("/instructors")
 })
 
 routes.get('/', function(req, res) {
-    return res.send("Instructors")
+    return res.send("instructors/index")
 })
 
 routes.get('/', function(req, res) {
-    return res.send("Members")
+    return res.send("members")
 })
 
 module.exports = routes
