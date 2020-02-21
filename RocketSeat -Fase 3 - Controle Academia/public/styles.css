@@ -39,7 +39,11 @@ box-sizing: border-box;
 }
 
 .links a.active {
-font-weight: bold;
-color: rgb(19, 19, 207);
+    font-weight: bold;
+    color: rgb(19, 19, 207);
+}
 
+.links a:hover {
+    text-decoration: underline;
+    color: white;
 }
