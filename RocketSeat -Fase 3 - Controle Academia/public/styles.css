@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kalam:400,700&display=swap');
+
+:root   {
+    --primary-color: rgb(19, 19, 207);
+}
 
 *{
     margin: 0;
@@ -8,7 +12,7 @@
 
 body{
     font-family: 'Kalam', cursive;
-    background-color: rgb(19, 19, 207);
+    background-color: var(--primary-color)
 }
 
 header {
@@ -31,6 +35,11 @@ box-sizing: border-box;
 
 .links a {
     text-decoration: none;
-    color: red;
+    color: black
 }
 
+.links a.active {
+font-weight: bold;
+color: rgb(19, 19, 207);
+
+}
