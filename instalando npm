@@ -1,3 +1,12 @@
-instalando npm visual
+Atualizar a pagina automatica sem aplicar Control + R
+
+-> Procura por: Live Server
+
+instalando npm no visual
 
 #npm install
+
+
+instalando nodemon
+
+#npm install -D nodemon

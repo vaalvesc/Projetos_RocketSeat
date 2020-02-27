@@ -35,7 +35,8 @@ box-sizing: border-box;
 
 .links a {
     text-decoration: none;
-    color: black
+    color: black;
+    position: relative
 }
 
 .links a.active {
@@ -44,6 +45,23 @@ box-sizing: border-box;
 }
 
 .links a:hover {
-    text-decoration: underline;
-    color: white;
+    color: green
+    
+}
+
+.links a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: green;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+
+} 
+
+
+.links a:hover::after {
+    width: 100%;
+    transition: width 100ms ease-in-out;
 }
