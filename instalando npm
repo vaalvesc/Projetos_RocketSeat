@@ -1,6 +1,6 @@
 Atualizar a pagina automatica sem aplicar Control + R
 
--> Procura por: Live Server
+-> Procura por: Live Server (só serve para staticos - local)
 
 instalando npm no visual
 
@@ -10,3 +10,8 @@ instalando npm no visual
 instalando nodemon
 
 #npm install -D nodemon
+
+
+instalando uma dependencia do browse para atualzar pagina sem dar Contro + R
+
+#npm install browser-sync npm-run-all -D
