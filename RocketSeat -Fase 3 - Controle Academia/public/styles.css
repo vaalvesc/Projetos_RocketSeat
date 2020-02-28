@@ -60,8 +60,30 @@ box-sizing: border-box;
 
 } 
 
-
 .links a:hover::after {
     width: 100%;
     transition: width 100ms ease-in-out;
+}
+
+/* === CARD === */
+
+.card {
+    background-color: white;
+    width: 800px;
+    height: 400px;
+    margin: 45px auto;  /* colocando a parte banca no centro*/
+    
+    /* === dividindo ao meio as imagens === */
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+    /* === Sombra da imagens === */
+    box-shadow: 0px 2px 6px -2px black;
+
+    /* === Sombra da imagens === */
+
+
+
+
+
 }

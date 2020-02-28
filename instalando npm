@@ -15,3 +15,10 @@ instalando nodemon
 instalando uma dependencia do browse para atualzar pagina sem dar Contro + R
 
 #npm install browser-sync npm-run-all -D
+
+
+site onde procurar fotos
+https://unsplash.com/
+
+site onde colocar varias fotos para rodar,basta informar o ID
+https://source.unsplash.com/collection/
