@@ -71,14 +71,16 @@ box-sizing: border-box;
     background-color: white;
     width: 800px;
     height: 400px;
-    margin: 45px auto;  /* colocando a parte banca no centro*/
-    
+
+    /* colocando a parte banca no centro*/
+    margin: 45px auto;  
+
     /* === dividindo ao meio as imagens === */
     display:grid;
     grid-template-columns: 1fr 1fr;
 
     /* === Sombra da imagens === */
-    box-shadow: 0px 2px 6px -2px black;
+    box-shadow: 0px 2px 116px -2px black;
 
     /* === Sombra da imagens === */
 
