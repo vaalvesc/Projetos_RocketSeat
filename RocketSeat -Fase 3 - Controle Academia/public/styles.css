@@ -82,7 +82,20 @@ box-sizing: border-box;
     /* === Sombra da imagens === */
     box-shadow: 0px 2px 116px -2px black;
 
-    /* === Sombra da imagens === */
+    /* === Animação === */
+    animation-name: ubber 200ms ; /* nome posso add qualquer um, 200 tempo de animação.*/
+    
+
+    @keyframes ubber {
+        from {  /* onde começa */
+            opacity: 0;
+        }
+        to {/* onde termina*/
+            opacity: 1;
+        }
+    } 
+
+    /* onde termina*/
 
 
 
