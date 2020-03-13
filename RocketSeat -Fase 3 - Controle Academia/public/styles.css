@@ -83,12 +83,13 @@ box-sizing: border-box;
     box-shadow: 0px 2px 116px -2px black;
 
     /* === Animação === */
-    animation-name: ubber 200ms ; /* nome posso add qualquer um, 200 tempo de animação.*/
+    animation-name: ubber 200ms ease ; /* nome posso add qualquer um, 200 tempo de animação.*/
     
 
     @keyframes ubber {
         from {  /* onde começa */
             opacity: 0;
+            transform: translateY(15px)
         }
         to {/* onde termina*/
             opacity: 1;
