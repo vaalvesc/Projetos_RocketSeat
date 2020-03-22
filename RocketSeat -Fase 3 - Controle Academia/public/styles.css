@@ -40,13 +40,10 @@ box-sizing: border-box;
     position: relative
 }
 
-.links a.active {
-    font-weight: bold;
-    color: rgb(19, 19, 207);
-}
+
 
 .links a:hover {
-    color: green
+    color: rgb(19, 19, 207);
     
 }
 
@@ -135,7 +132,7 @@ box-sizing: border-box;
 .details h3 {
     text-transform: uppercase;
     font-weight: bold;  
-    color: var(--primary-color)
+    
 }
 
 .details .item span{
@@ -174,6 +171,10 @@ input::placeholder  {
 
 button [type="submit"] {
     padding: 8px 32px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    color: white;
     border-radius: 4px;
+    margin-top: 32px;  /* distancia do botão Salvar da palavra acima */
+    width: 100%;  /* Largura do botão Salvar */
+    font-size: 16px;
 }
