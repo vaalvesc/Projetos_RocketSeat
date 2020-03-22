@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Kalam:400,700&display=swap');
 
 :root   {
-    --primary-color: rgb(19, 19, 207);
+    --primary-color: #7159c1;  
+    --secondary-color: #F7DF1E;
 }
 
 *{
@@ -69,8 +70,8 @@ box-sizing: border-box;
 
 .card {
     background-color: white;
-    width: 500px;
-    height: 500px;
+    width: 700px;
+    height: 570px;
 
     /* colocando a parte banca no centro*/
     margin: 45px auto;  
@@ -80,10 +81,10 @@ box-sizing: border-box;
     grid-template-columns: 1fr 1fr;
 
     /* === Sombra da imagens === */
-    box-shadow: 0px 2px 116px -2px black;
+    box-shadow: 0px 2px 6px -2px rgba(0,0,0,0);
 
     /* === Animação === */
-    animation-name: ubber 200ms ease ; /* nome posso add qualquer um, 200 tempo de animação.*/
+    animation-name: up 200ms ease ; /* nome posso add qualquer um, 200 tempo de animação.*/
     
 
     @keyframes ubber {
@@ -91,7 +92,7 @@ box-sizing: border-box;
             opacity: 0;
             transform: translateY(15px)
         }
-        to {/* onde termina*/
+        to {      /* onde termina*/
             opacity: 1;
         }
     } 
@@ -112,8 +113,9 @@ box-sizing: border-box;
 }
 
 .details .item: last-child {
-    border: none;  /* O ultimo texto não tem sublinhado*/
+    border:none  /* O ultimo texto não tem sublinhado*/
 }
+
 .details h3,
 .details .item div:nth-child(1) {
     font-size: 14px;
@@ -143,10 +145,10 @@ box-sizing: border-box;
     color: #777;
     margin-right: 4px;
     margin-top: 8px;
-    display: inline-block;
-    text transform: uppercase;
-    font-size 13p2
-
+    display: inline-block; /*inline-block ele n*/
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px
 
 
 }
