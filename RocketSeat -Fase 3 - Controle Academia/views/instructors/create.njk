@@ -9,34 +9,56 @@
    
     <section class="details">
    
-        <h3>Detalhes<h3/>
+        <h3>Cadastro Novo Instrutor<h3/>
 
         <div class="item">
-            <div>Instrutor</div>
-            <div>Guilherme Sara</div>
+            <div>Avatar URL</div>
+            <div>
+                <input 
+                    type="url"
+                    name="avatar_url"
+                    placeholder="http://"
+                >   
+           </div>         
         </div>    
-         
+
+         <div>Instrutor</div>
+            <div>
+                <input 
+                    type="texte"
+                    name="name"
+                    placeholder="Nome do Instrutor"
+                >   
+           </div>         
+        </div>    
+
          <div class="item">
-            <div>Idade</div>
-            <div>23</div>
+            <div>Data de Nascimento</div>
+            <div> 
+                <input 
+                    type="date"
+                    name= "birth"
+                >
         </div>
 
          <div class="item">
             <div>Sexo</div>
-            <div>Masculino</div>
+            <div>
+                <span> <input type="radio" name="gender" value="M" checked> Masculino </span>
+                <span> <input type="radio" name="gender" value="F"> Feminino </span>
         </div>   
 
          <div class="item">
-            <div>Acompanhamento</div>
-            <span>Musculação</span>
-            <span>Crossfit</span>
+            <div>Área de Atuação</div>
+            <div>
+                <input type="text"
+                       name="services"
+                       placeholder="Separe os serviços por vírgula"
+                >
+           </div>     
         </div> 
-           
-        <div class="item">
-            <div>Desde</div>
-            <div>01/01/2020</div>
-            
-        </div>      
+   
+        <button type="submit"> Salvar</button>
 
         </section>
 </form>

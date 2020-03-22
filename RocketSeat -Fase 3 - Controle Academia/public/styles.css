@@ -70,8 +70,8 @@ box-sizing: border-box;
 
 .card {
     background-color: white;
-    width: 700px;
-    height: 570px;
+    width: 900px;
+    height: 600px;
 
     /* colocando a parte banca no centro*/
     margin: 45px auto;  
@@ -112,8 +112,8 @@ box-sizing: border-box;
     
 }
 
-.details .item: last-child {
-    border:none  /* O ultimo texto não tem sublinhado*/
+.details .item last-child {
+    border: none  /* O ultimo texto não tem sublinhado*/
 }
 
 .details h3,
@@ -150,5 +150,30 @@ box-sizing: border-box;
     text-transform: uppercase;
     font-size: 12px
 
+}
 
+/* FORM */
+
+input {
+    width: 100%; /* largura onde digito a informação */
+    outline: none;
+    color: #555; /* cor onde digito a informação */
+    font-weight: bold; /* quando digitar as letras ficam em negrito */
+    font-size: 18px /* tamanho da letra onde digito a informação */
+}
+
+input [type="radio"] {
+    width: initial;
+    margin-right: 4px;
+}
+
+input::placeholder  {
+    font-size: 16px; /* tamanho da letra onde digito a informação */
+    font-weight: normal; /* Ajusta a fonte onde digito a informação */
+}
+
+button [type="submit"] {
+    padding: 8px 32px;
+    background-color: var(--secondary-color);
+    border-radius: 4px;
 }
